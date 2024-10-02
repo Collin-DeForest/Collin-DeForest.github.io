@@ -14,6 +14,10 @@ body{
    font-size: 50px;
    font-weight:900;
 }
+.logo a{
+    color: #0f3475;
+    text-decoration: none;
+}
 .logo img{
     width:100px;
     height:90px;    
@@ -41,6 +45,14 @@ nav a{
     color: #0f3475;
     /* border: 1px solid black; */
 
+}
+#home img{
+    width:400px;
+    height:200px;
+}
+#assignmentWrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .contact{
     text-decoration: none;
