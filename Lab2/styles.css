@@ -1,0 +1,48 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.kBA4RJWkFehB519l5KMEjwAAAA%26pid%3DApi&f=1&ipt=857cbcff5162a5a28b50fe7b82acf3ffec9474da6725dfa33ee756aff1eb7773&ipo=images);
+    /*background-repeat: no-repeat;*/
+    background-position: 0%;
+    background-position-x: center;
+    padding-bottom: 2em;
+} 
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.news-column {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+h4{
+    background-color: #f4f4f4;
+}
+#picture{
+    width: 100px;
+}
