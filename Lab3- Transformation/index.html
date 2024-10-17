@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Season's Harvest</title>
+</head>
+<body>
+
+    <header id="myHeader">
+        Some Seasonal Crops
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+        <div id="menu" class="menu hidden">
+            <button class="btn summer-btn" onclick="setSummerMode()">Summer Mode</button>
+            <button class="btn spring-btn" onclick="setSpringMode()">Spring Mode</button>
+            <button class="btn fall-btn" onclick="setFallMode()">Fall Mode</button>
+            <button class="btn winter-btn" onclick="setWinterMode()">Winter Mode</button>
+        </div>
+    </header>
+    <main>
+        <div id="particles-js"></div>
+         <!-- First Photo Grid-->
+  <div id="summer" class="photoGrid">
+    <div class="foodItem">
+        <a href="https://en.wikipedia.org/wiki/Carrot">
+            <img src="/images/carrots.webp" alt="Carrot">
+        </a>
+    </div>
+    <div class="foodItem">
+        <a href="https://en.wikipedia.org/wiki/Carrot">
+            <img src="/images/Cucumber.jpg" alt="Cucumber">
+        </a>
+    </div>
+    <div class="foodItem">
+        <a href="https://en.wikipedia.org/wiki/Bell_pepper">
+            <img src="/images/pepper.jpg" alt="pepper">
+        </a>
+    </div>
+    <div class="foodItem">
+        <a href="https://en.wikipedia.org/wiki/Tomato">
+            <img src="/images/tomato.jpg" alt="Pasta and Wine">
+        </a>
+    </div>
+    <h1>Summer Crops</h1>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div id="spring" class="photoGrid">
+    <div class="foodItem">
+      <a href="https://en.wikipedia.org/wiki/Lettuce">
+      <img src="/images/lettuce.jpg" alt="Lettuce">
+      </a>
+    </div>
+    <div class="foodItem">
+      <a href="https://en.wikipedia.org/wiki/Artichoke">
+      <img src="/images/artichokes.jpg" alt="artichoke">
+    </a>
+    </div>
+    <div class="foodItem">
+      <a href="https://en.wikipedia.org/wiki/Beetroot">
+      <img src="/images/Beet.jpg" alt="Beet">
+      </a>
+    </div>
+    <div class="foodItem">
+      <a href="https://en.wikipedia.org/wiki/Rhubarb">
+      <img src="/images/rhubarb.jpg" alt="rhubarb">
+      </a>
+    </div>
+    <h1>Spring Crops</h1>
+  </div>
+
+    <!-- Third Photo Grid-->
+    <div id="fall" class="photoGrid">
+        <div class="foodItem">
+          <a href="https://en.wikipedia.org/wiki/Pumpkin">
+          <img src="/images/pumpkin.jpeg" alt="pumpkin">
+          </a>
+        </div>
+        <div class="foodItem">
+          <a href="https://en.wikipedia.org/wiki/Spinach">
+          <img src="/images/spinach.jpeg" alt="spinach">
+          </a>
+        </div>
+        <div class="foodItem">
+          <a href="https://en.wikipedia.org/wiki/Turnip">
+          <img src="/images/turnips.jpeg" alt="turnips">
+          </a>
+        </div>
+        <div class="foodItem">
+          <a href="https://en.wikipedia.org/wiki/Leek">
+          <img src="/images/leeks.webp" alt="leeks">
+          </a>
+        </div>
+        <h1>Fall Crops</h1>
+      </div>
+
+        <!-- Fourth Photo Grid-->
+  <div id="winter" class="photoGrid">
+    <div class="foodItem">
+      <a href="https://en.wikipedia.org/wiki/Kale">
+      <img src="/images/kale.jpeg" alt="kale">
+      </a>
+    </div>
+    <div class="foodItem">
+      <a href="https://en.wikipedia.org/wiki/Snow_pea">
+      <img src="/images/snowPea.jpg" alt="snow pea">
+      </a>
+    </div>
+    <div class="foodItem">
+      <a href="https://en.wikipedia.org/wiki/Garlic">
+      <img src="/images/garlic.webp" alt="garlic">
+      </a>
+    </div>
+    <div class="foodItem">
+      <a href="https://en.wikipedia.org/wiki/Daikon">
+      <img src="/images/daikon-Radish.jpeg" alt="daikon-Radish">
+      </a>
+    </div>
+    <h1>Winter Crops</h1>
+  </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+          console.log('particles.js loaded - callback');
+        });
+    </script>
+    <script>
+        window.onload = function() {
+            setSummerMode();
+        };
+    </script>
+</body>
+
+</html>
