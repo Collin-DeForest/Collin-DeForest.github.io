@@ -1,0 +1,10 @@
+html, body {
+  margin-left: 15em;
+  background-color: bisque;
+}
+canvas {
+  display: block;
+}
+nav a{
+  margin-left: 0;
+}
